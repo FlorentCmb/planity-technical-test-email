@@ -30,6 +30,7 @@ const EmailInput = () => {
         setEmailValue(e.target.value)
     }
 
+    // The function handling the suggestions
     const getSuggestions = value => {
         const splittedValue = value.split('@')[1]
         const potentialSuggestions = providers.filter(item => item.includes(splittedValue))
@@ -58,9 +59,10 @@ const EmailInput = () => {
         <div className="EmailInput">
             <label className="EmailInput-Label">Email :</label>
             <input id="EmailInput-Input" name="email" type="email" placeholder="Ex : jean.dupont@gmail.com" value={emailValue} onChange={inputHandler} />
-            <div>{suggestions.length > 0 && !providers.includes(emailValue) ? suggestions.map((suggestion, index) => (
-                <p key={index}>{suggestion}</p>
-            )) : "pas de suggestions la petite"}</div>
+            <ul>{suggestions.length > 0 && !providers.includes(emailValue) ? suggestions.map((suggestion, index) => (
+                <li key={index}>{suggestion}</li>
+            )) : ""}
+            </ul>
         </div>
     )
 }
