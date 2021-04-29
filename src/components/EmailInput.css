@@ -1,0 +1,9 @@
+.EmailInput {
+    margin: 20px;
+}
+
+#EmailInput-Input {
+    border-radius: 25px;
+    padding: 10px 15px;
+    border: 1px solid grey;
+}
