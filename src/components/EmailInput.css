@@ -6,4 +6,26 @@
     border-radius: 25px;
     padding: 10px 15px;
     border: 1px solid grey;
+    font-size: 110%;
+}
+
+.EmailInput-List {
+    border: 1px solid gray;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    width: max-content;
+    margin: 0;
+    transform: translateX(70px);
+    list-style: none;
+    padding: inherit;
+}
+
+.EmailInput-List-Item {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.EmailInput-List-Item:hover {
+    background-color: rgb(88, 88, 255);
+    color: white;
 }
